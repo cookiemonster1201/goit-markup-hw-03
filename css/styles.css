@@ -232,16 +232,15 @@ img {
   margin-top: -30px;
 }
 
-.employee-img {
-  margin-bottom: 30px;
-}
-
 .employee-card {
   margin-left: 30px;
   margin-top: 30px;
-  padding-bottom: 30px;
   flex-basis: calc(100% / 4 - 30px);
   background-color: #fff;
+}
+
+.employee-img {
+  margin-bottom: 30px;
 }
 
 .employee-name {
@@ -255,6 +254,7 @@ img {
 }
 
 .employee-speciality {
+  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -333,14 +333,12 @@ img {
 .projects-card {
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .info-container {
-  display: flex;
-  flex-direction: column;
   padding: 20px 24px;
   border: 1px solid #eee;
-  flex-basis: calc(100% / 3 - 30px);
   border-top: none;
 }
 
