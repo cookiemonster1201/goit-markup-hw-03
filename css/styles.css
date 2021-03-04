@@ -25,6 +25,26 @@ body {
   color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -48,31 +68,10 @@ body {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-
 /* ==============HEADER!!!=============== */
 .page-header {
   background-color: var(--primary-background-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
 }
 
 .page-header .container {
@@ -100,6 +99,9 @@ img {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -120,7 +122,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.contacts-header-item .tel {
+.contacts-header-item.tel {
   margin-left: 50px;
 }
 
@@ -170,11 +172,6 @@ img {
 /* ===============HERO END!!!======================= */
 
 /* ===============FEATURES SECTION!!!================ */
-.features {
-  padding-top: var(--section-padding-top-and-bottom);
-  padding-bottom: var(--section-padding-top-and-bottom);
-}
-
 .features-list {
   display: flex;
   margin-left: -30px;
@@ -206,8 +203,8 @@ img {
 /* ===============FEATURES SECTION END!!!================ */
 
 /* ===============GALLERY SECTION!!!====================== */
-.gallery {
-  padding-bottom: var(--section-padding-top-and-bottom);
+.gallery.section {
+  padding-top: 0;
 }
 
 .gallery-list {
@@ -225,9 +222,7 @@ img {
 /* ===============GALLERY SECTION END!!!====================== */
 
 /* ===============EMPLOYEES SECTION!!!============================== */
-.employees {
-  padding-top: var(--section-padding-top-and-bottom);
-  padding-bottom: var(--section-padding-top-and-bottom);
+.employees.section {
   background-color: var(--secondary-background-color);
 }
 
@@ -295,7 +290,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-footer-link.mail {
+.contacts-footer-item.mail {
   display: block;
   margin-bottom: 9px;
 }
@@ -303,11 +298,6 @@ img {
 /* ===============FOOTER END!!!=================================== */
 
 /* ===============PORTFOLIO!!!================ */
-.portfolio {
-  padding-top: var(--section-padding-top-and-bottom);
-  padding-bottom: var(--section-padding-top-and-bottom);
-  border-top: 1px solid #eee;
-}
 .projects-filter {
   display: flex;
   justify-content: center;
@@ -429,4 +419,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: var(--section-padding-top-and-bottom);
+  padding-bottom: var(--section-padding-top-and-bottom);
+  border-color: var(--primary-background-color);
 }
